@@ -5,7 +5,19 @@ const Home = () => {
   return (
     <>
       <img src={logo} className="App-logo" alt="logo" />
-      <p>Home here</p>
+      <p>Welcome!</p>
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>Welcome!</p>
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>Welcome!</p>
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>Welcome!</p>
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>Welcome!</p>
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>Welcome!</p>
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>Welcome!</p>
     </>
   );
 };

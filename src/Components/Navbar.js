@@ -6,13 +6,23 @@ import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 const NavBar = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar
+        sticky="top"
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        variant="dark"
+      >
+        <Navbar.Brand href="#home">Ron's Site</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
             <NavDropdown title="Projects" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="/projects" target="#">
+                Projects
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
               <NavDropdown.Item
                 href="http://www.ronviloriogames.xyz/"
                 target="#"
