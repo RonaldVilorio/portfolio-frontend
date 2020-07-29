@@ -5,7 +5,8 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import { Route, Switch } from "react-router-dom";
-// import "bootstrap/dist/css/bootstrap.min.css";
+
+
 
 function App() {
   return (

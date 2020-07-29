@@ -7,20 +7,21 @@ class Projects extends Component {
 
   getAllProjects() {
     // fetch req
-    let allProjects = [];
-    for (let project of projects) {
-      allProjects.push(<h1>{project.name}</h1>);
-    }
-    return allProjects;
+    // let allProjects = [];
+    // for (let project of projects) {
+    //   allProjects.push(<h1>{project.name}</h1>);
+    // }
+    // return allProjects;
   }
 
   render() {
     return (
       <>
         <h1> These are my projects</h1>
-        
-        <div>{this.getAllProjects()}</div>
+
+        {/* <div>{this.getAllProjects()}</div> */}
       </>
     );
   }
 }
+export default Projects;

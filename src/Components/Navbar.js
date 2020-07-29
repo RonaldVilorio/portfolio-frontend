@@ -1,7 +1,8 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
+import logo from "../assets/logo3.png";
 
 const NavBar = () => {
   return (
@@ -13,33 +14,24 @@ const NavBar = () => {
         bg="dark"
         variant="dark"
       >
-        <Navbar.Brand href="#home">Ron's Site</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img src={logo} className="logo" width="50px" alt="logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
-            <NavDropdown title="Projects" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/projects" target="#">
-                Projects
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item
-                href="http://www.ronviloriogames.xyz/"
-                target="#"
-              >
-                Mario Game
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link
+              href="https://www.linkedin.com/in/ronald-vilorio/"
+              target="#"
+            >
+              LinkedIn
+            </Nav.Link>
+            <Nav.Link href="https://github.com/RonaldVilorio" target="#">
+              Github
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
