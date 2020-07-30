@@ -5,8 +5,6 @@ const Home = () => {
     <>
       <div>Image</div>
       <div>Ronald Vilorio \n Web Developer</div>
-      
-      
     </>
   );
 };
