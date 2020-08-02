@@ -1,4 +1,8 @@
-.project-card {
+body{
+  background-color: blueviolet;
+}
+
+.projectCard {
   display: flex;
   color: orange;
   min-width: 200px;
