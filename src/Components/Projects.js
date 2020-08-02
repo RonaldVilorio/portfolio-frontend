@@ -20,32 +20,21 @@ class Projects extends Component {
         });
       });
   }
-
-  getAllProjects() {
-    // fetch req
-    // let allProjects = [];
-    // for (let project of projects) {
-    //   allProjects.push(<h1>{project.name}</h1>);
-    // }
-    // return allProjects;
-  }
-
   render() {
     return (
       <>
         <h1> These are my projects</h1>
-        {/* add className projectCard */}
-        {/* add classes for each individual ele */}
-        {this.state.projects.length > 0 &&
-          this.state.projects.map((proj, id) => {
-            return (
-              <div key={id} className="project-card">
-                <div>{proj.name}</div>
-                <img src={proj.imageurl} alt="pics" />
-              </div>
-            );
-          })}
-        
+        <div className="projectsContainer">
+          {this.state.projects.length > 0 &&
+            this.state.projects.map((proj, id) => {
+              return (
+                <div key={id} className="project-card">
+                  <div>{proj.name}</div>
+                  <img src={proj.imageurl} width="300" alt="pics" />
+                </div>
+              );
+            })}
+        </div>
       </>
     );
   }
