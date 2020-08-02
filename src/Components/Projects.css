@@ -1,0 +1,8 @@
+.project-card {
+  display: flex;
+  color: orange;
+  min-width: 200px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+}

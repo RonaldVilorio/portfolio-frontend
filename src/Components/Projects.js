@@ -1,9 +1,25 @@
 import React, { Component } from "react";
+import "./Projects.css";
 
 class Projects extends Component {
-  state = {};
+  state = {
+    projects: [],
+    dataLoaded: false,
+  };
 
-  componentDidMount() {}
+  componentDidMount() {
+    fetch("http://localhost:3030/projects")
+      .then((res) => {
+        return res.json();
+      })
+      .then((res) => {
+        console.log(res);
+        this.setState({
+          projects: res,
+          dataLoaded: true,
+        });
+      });
+  }
 
   getAllProjects() {
     // fetch req
@@ -18,8 +34,18 @@ class Projects extends Component {
     return (
       <>
         <h1> These are my projects</h1>
-
-        {/* <div>{this.getAllProjects()}</div> */}
+        {/* add className projectCard */}
+        {/* add classes for each individual ele */}
+        {this.state.projects.length > 0 &&
+          this.state.projects.map((proj, id) => {
+            return (
+              <div key={id} className="project-card">
+                <div>{proj.name}</div>
+                <img src={proj.imageurl} alt="pics" />
+              </div>
+            );
+          })}
+        
       </>
     );
   }
