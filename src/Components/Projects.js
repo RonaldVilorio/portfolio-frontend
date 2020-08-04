@@ -8,7 +8,7 @@ class Projects extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:3030/projects")
+    fetch("http://34.221.5.234:3030/projects")
       .then((res) => {
         return res.json();
       })
@@ -23,17 +23,19 @@ class Projects extends Component {
   render() {
     return (
       <>
-        <h1> These are my projects</h1>
-        <div className={`${styles.projectsContainer} ${styles.body}`}>
-          {this.state.projects.length > 0 &&
-            this.state.projects.map((proj, id) => {
-              return (
-                <div key={id} className={styles.projectCard}>
-                  <div>{proj.name}</div>
-                  <img src={proj.imageurl} width="300" alt="pics" />
-                </div>
-              );
-            })}
+        <div className={`${styles.projectsContainer}`}>
+          <h1> These are my projects</h1>
+          <div>
+            {this.state.projects.length > 0 &&
+              this.state.projects.map((proj, id) => {
+                return (
+                  <div key={id} className={styles.projectCard}>
+                    <div>{proj.name}</div>
+                    <img src={proj.imageurl} width="300" alt="pics" />
+                  </div>
+                );
+              })}
+          </div>
         </div>
       </>
     );

@@ -1,7 +1,3 @@
-body{
-  background-color: blueviolet;
-}
-
 .projectCard {
   display: flex;
   color: orange;
@@ -10,10 +6,13 @@ body{
   justify-content: center;
   margin: 5px;
 }
-.projectsContainer{
-  display: flex;
+.projectsContainer {
+  /* display: flex;
   margin-top: 50px;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
+  background-color: red;
+  height: 100vh;
+  width: 100%;
 }
