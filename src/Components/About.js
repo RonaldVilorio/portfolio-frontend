@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <div>Interests(relating to problem solving)</div>
-      <div>Journey?</div>
+      <div>Journey??</div>
     </>
   );
 };
