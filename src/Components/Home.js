@@ -9,12 +9,10 @@ const Home = () => {
         <div className={styles.imageDiv}>
           <img src={image} alt="profile pic" width={250} />{" "}
         </div>
-        <div>
-          <p>
-            Hey welcome to my personal site my name is Ronald Vilorio and I'm a
-            Full Stack Web Developer
-          </p>
-        </div>
+        <p>
+          Hey welcome to my personal site my name is Ronald Vilorio and I'm a
+          Full Stack Web Developer
+        </p>
       </div>
     </>
   );

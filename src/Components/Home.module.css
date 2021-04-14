@@ -1,13 +1,21 @@
+*{
+  border: black solid 5px;
+  
+}
 .homeContainer {
   display: flex;
   align-items: center;
-  /* background-image: url("../assets/background2.jpg");
+  background-image: url("../assets/background2.jpg");
   background-repeat: repeat;
-  background-size: cover; */
+  background-size: cover;
   /* background-color: blue; */
   width: 100%;
   height: 100vh;
 }
 .imageDiv {
-  margin-left: 20px;
+  margin-left: 5px;
+  margin-bottom: 400px;
+}
+p{
+  margin-bottom: 700px;
 }
