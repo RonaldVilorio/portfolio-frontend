@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <>
       <Navbar
-        sticky="top"
+        fixed="top"
         collapseOnSelect
         expand="lg"
         bg="dark"
