@@ -1,5 +1,5 @@
 .homeContainer {
-  min-height: 100vh;
+  height: 100vh;
   border: aquamarine solid 10px;
   display: flex;
   align-items: center;
