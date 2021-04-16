@@ -1,12 +1,16 @@
 .homeContainer {
-  border: black solid 10px;
+  min-height: 100vh;
+  border: aquamarine solid 10px;
   display: flex;
   align-items: center;
 }
-img {
-  border-radius: 20px;
+.profileImage {
+  border: black solid 5px;
+}
+.profileImage img {
   transform: scale(0.25) translate(25%);
 }
 p {
   margin-bottom: 700px;
+  border: black solid 5px;
 }

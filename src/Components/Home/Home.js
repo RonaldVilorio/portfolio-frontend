@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <>
       <div className={styles.homeContainer}>
-        <img src={image} alt="profile pic" />{" "}
+        <div className={styles.profileImage}>
+          <img src={image} alt="profile pic" />{" "}
+        </div>
         <p>
           Hey welcome to my personal site my name is Ronald Vilorio and I'm a
           Full Stack Web Developer
