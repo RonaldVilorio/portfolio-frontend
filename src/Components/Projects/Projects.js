@@ -2,9 +2,15 @@ import React, { Component } from "react";
 import styles from "./Projects.module.css";
 
 class Projects extends Component {
+  
   state = {
-    projects: [],
-    dataLoaded: false,
+    projects: [
+      {
+        name: "calculator",
+        imageUrl: "https://photos.app.goo.gl/Dgh2CHCtuVRxjCnA6",
+        alt: "calculator picture",
+      },
+    ],
   };
   render() {
     return (
@@ -17,7 +23,8 @@ class Projects extends Component {
                 return (
                   <div key={id} className={styles.projectCard}>
                     <div>{proj.name}</div>
-                    <img src={proj.imageurl} width="300" alt="pics" />
+                    {console.log("hey")}
+                    <img src={proj.imageUrl} width="300" alt={proj.alt} />
                   </div>
                 );
               })}

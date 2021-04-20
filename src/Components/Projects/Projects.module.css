@@ -7,12 +7,12 @@
   margin: 5px;
 }
 .projectsContainer {
-  /* display: flex;
+  display: flex;
   margin-top: 50px;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center; */
-  background-color: red;
+  justify-content: center;
+  background-color:aquamarine;
   height: 100vh;
   width: 100%;
 }
