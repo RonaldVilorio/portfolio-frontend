@@ -6,20 +6,6 @@ class Projects extends Component {
     projects: [],
     dataLoaded: false,
   };
-
-  componentDidMount() {
-    fetch("http://34.221.5.234:3030/projects")
-      .then((res) => {
-        return res.json();
-      })
-      .then((res) => {
-        console.log(res);
-        this.setState({
-          projects: res,
-          dataLoaded: true,
-        });
-      });
-  }
   render() {
     return (
       <>
