@@ -3,7 +3,6 @@ import styles from "./Projects.module.css";
 import axios from "axios";
 
 class Projects extends Component {
-  
   state = {
     projects: [
       {
@@ -13,9 +12,14 @@ class Projects extends Component {
       },
     ],
   };
-  componentDidMount(){
-    // https://photos.google.com/share/AF1QipOYvuTyCKMU5RKtjKENFYJir-Hsf_fiuREUWz2oAbFc03I4N2Hx9aFyuNd1HyMwng?key=ODgxQzVMX0pseU5XMzA4T0N5Mi02ZTJLZFJFN1dR
-    
+  componentDidMount() {
+    axios
+      .get(
+        "https://photoslibrary.googleapis.com/v1/albums/APlRZ9VEphrEKWcTU1LVEmtKGzHhTLXG3TVk370RK4Sbf7yfwwaYg8GU1AZsz7HFb7thfR-c7jLd"
+      )
+      .then((resp) => {
+        console.log(resp.data);
+      });
   }
   render() {
     return (
