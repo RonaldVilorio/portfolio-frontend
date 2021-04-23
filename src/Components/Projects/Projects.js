@@ -1,25 +1,27 @@
 import React, { Component } from "react";
 import styles from "./Projects.module.css";
-import axios from "axios";
+import createApi from "unsplash";
+// import axios from "axios";
+// uninstall axios
 
 class Projects extends Component {
   state = {
     projects: [
       {
         name: "calculator",
-        imageUrl: "https://photos.app.goo.gl/Dgh2CHCtuVRxjCnA6",
+        imageUrl: "",
         alt: "calculator picture",
       },
     ],
   };
   componentDidMount() {
-    axios
-      .get(
-        "https://photoslibrary.googleapis.com/v1/albums/APlRZ9VEphrEKWcTU1LVEmtKGzHhTLXG3TVk370RK4Sbf7yfwwaYg8GU1AZsz7HFb7thfR-c7jLd"
-      )
-      .then((resp) => {
-        console.log(resp.data);
-      });
+    console.log(createApi, "HEHEEHE");
+    const unsplash = createApi({
+      accessKey: "",
+      headers: { extrastring: "foo" },
+    });
+
+    // console.log(unsplash);
   }
   render() {
     return (
