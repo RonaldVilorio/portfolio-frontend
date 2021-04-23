@@ -1,28 +1,30 @@
 import React, { Component } from "react";
 import styles from "./Projects.module.css";
-import createApi from "unsplash";
-// import axios from "axios";
-// uninstall axios
+import calculator from "../../assets/calculator.jpg";
+import mario from "../../assets/mario.jpg";
+import notFlix from "../../assets/notFlix.jpg";
 
 class Projects extends Component {
   state = {
     projects: [
       {
         name: "calculator",
-        imageUrl: "",
-        alt: "calculator picture",
+        imageUrl: `${calculator}`,
+        alt: "calculator image",
+      },
+      {
+        name: "mario",
+        imageUrl: `${mario}`,
+        alt: "mario image",
+      },
+      {
+        name: "notFlix",
+        imageUrl: `${notFlix}`,
+        alt: "notFlix image",
       },
     ],
   };
-  componentDidMount() {
-    console.log(createApi, "HEHEEHE");
-    const unsplash = createApi({
-      accessKey: "",
-      headers: { extrastring: "foo" },
-    });
-
-    // console.log(unsplash);
-  }
+  componentDidMount() {}
   render() {
     return (
       <>
@@ -34,7 +36,6 @@ class Projects extends Component {
                 return (
                   <div key={id} className={styles.projectCard}>
                     <div>{proj.name}</div>
-                    {console.log("hey")}
                     <img src={proj.imageUrl} width="300" alt={proj.alt} />
                   </div>
                 );
