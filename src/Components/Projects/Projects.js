@@ -29,14 +29,13 @@ class Projects extends Component {
     return (
       <>
         <div className={`${styles.projectsContainer}`}>
-          <h1> These are my projects</h1>
           <div>
             {this.state.projects.length > 0 &&
               this.state.projects.map((proj, id) => {
                 return (
                   <div key={id} className={styles.projectCard}>
                     <div>{proj.name}</div>
-                    <img src={proj.imageUrl} width="300" alt={proj.alt} />
+                    <img src={proj.imageUrl} width="300" height="200" alt={proj.alt} />
                   </div>
                 );
               })}
