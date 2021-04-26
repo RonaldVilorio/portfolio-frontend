@@ -1,10 +1,13 @@
-import React from "react";
+import React,{Component} from "react";
 import styles from "./Home.module.css";
 import image from "../../assets/ron2.jpg";
-
-const Home = () => {
-  return (
-    <>
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
       <div className={styles.homeContainer}>
         <div className={styles.profileImage}>
           <img src={image} alt="profile pic" />{" "}
@@ -14,8 +17,8 @@ const Home = () => {
           Full Stack Web Developer
         </p>
       </div>
-    </>
-  );
-};
+    );
+  }
+}
 
 export default Home;
