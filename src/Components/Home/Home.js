@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React, { Component } from "react";
 import styles from "./Home.module.css";
 import image from "../../assets/ron2.jpg";
 class Home extends Component {
@@ -9,13 +9,17 @@ class Home extends Component {
   render() {
     return (
       <div className={styles.homeContainer}>
-        <div className={styles.profileImage}>
-          <img src={image} alt="profile pic" />{" "}
+        <div className={styles.leftSide}>
+          <div className={styles.profileImage}>
+            <img src={image} alt="profile pic" />{" "}
+          </div>
         </div>
-        <p>
-          Hey welcome to my personal site my name is Ronald Vilorio and I'm a
-          Full Stack Web Developer
-        </p>
+        <div className={styles.rightSide}>
+          <p>
+            Hey welcome to my personal site my name is Ronald Vilorio and I'm a
+            Full Stack Web Developer
+          </p>
+        </div>
       </div>
     );
   }

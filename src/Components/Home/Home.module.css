@@ -1,16 +1,30 @@
 .homeContainer {
-  height: 100vh;  
+  height: 100vh;
   border: aquamarine solid 10px;
   display: flex;
   align-items: center;
 }
+.leftSide {
+  /* display: flex; */
+  border: blue solid 5px;
+  width: 50%;
+  height: 100vh;
+}
+.rightSide {
+  display: flex;
+  border: red solid 5px;
+  width: 50%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
 .profileImage {
   border: black solid 5px;
+  margin-top: 70px;
 }
 .profileImage img {
-  transform: scale(0.25) translate(25%);
+  width: 100%;
 }
 p {
-  margin-bottom: 700px;
   border: black solid 5px;
 }
