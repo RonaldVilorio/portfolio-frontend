@@ -8,17 +8,17 @@ class Projects extends Component {
   state = {
     projects: [
       {
-        name: "calculator",
+        name: "Calculator C",
         imageUrl: `${calculator}`,
         alt: "calculator image",
       },
       {
-        name: "mario",
+        name: "Mario Activate",
         imageUrl: `${mario}`,
         alt: "mario image",
       },
       {
-        name: "notFlix",
+        name: "NotFlix",
         imageUrl: `${notFlix}`,
         alt: "notFlix image",
       },
@@ -28,14 +28,14 @@ class Projects extends Component {
   render() {
     return (
       <>
-        <div className={`${styles.projectsContainer}`}>
-          <div>
+        <div className={styles.projectsContainer}>
+          <div className={styles.projectCardsContainer}>
             {this.state.projects.length > 0 &&
               this.state.projects.map((proj, id) => {
                 return (
                   <div key={id} className={styles.projectCard}>
                     <div>{proj.name}</div>
-                    <img src={proj.imageUrl} width="300" height="200" alt={proj.alt} />
+                    <img src={proj.imageUrl} alt={proj.alt} />
                   </div>
                 );
               })}

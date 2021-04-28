@@ -33,6 +33,7 @@
   color: white;
 }
 p {
+  width: 75%;
   border: black solid 5px;
   font-size: 3em;
 }
