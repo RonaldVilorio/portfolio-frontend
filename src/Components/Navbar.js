@@ -7,13 +7,7 @@ import logo from "../assets/logo3.png";
 const NavBar = () => {
   return (
     <>
-      <Navbar
-        fixed="top"
-        collapseOnSelect
-        expand="lg"
-        bg="dark"
-        variant="dark"
-      >
+      <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="/">
           <img src={logo} className="logo" width="50px" alt="logo" />
         </Navbar.Brand>
@@ -22,7 +16,7 @@ const NavBar = () => {
           <Nav className="mr-auto"></Nav>
           <Nav>
             <Nav.Link href="/projects">Projects</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+
             <Nav.Link
               href="https://www.linkedin.com/in/ronald-vilorio/"
               target="#"
