@@ -5,7 +5,7 @@
   background-color: #16213e;
   height: 100vh;
   width: 100%;
-  border: aquamarine 5px solid;
+  border: rgb(155, 255, 127) 5px solid;
 }
 .projectCardsContainer {
   /* overflow: hidden; */
@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
-  border: 5px solid orange;
+  /* border: 5px solid orange; */
 }
 .projectCard {
   background-color: white;
@@ -25,8 +25,12 @@
   height: 20em;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 3px;
-  border: 5px solid green;
+  border: 5px solid rgb(155, 255, 127);
+}
+.projectCard a {
+  color: red;
 }
 .projectCard img {
   width: 20em;

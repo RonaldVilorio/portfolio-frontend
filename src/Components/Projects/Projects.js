@@ -11,31 +11,38 @@ class Projects extends Component {
         name: "Calculator C",
         imageUrl: `${calculator}`,
         alt: "calculator image",
+        github: "https://github.com/RonaldVilorio/calculator",
       },
       {
         name: "Mario Activate",
         imageUrl: `${mario}`,
         alt: "mario image",
+        github: "https://github.com/RonaldVilorio/mario",
+        website: "https://www.ronviloriogames.xyz/",
       },
       {
         name: "NotFlix",
         imageUrl: `${notFlix}`,
         alt: "notFlix image",
+        github: "https://github.com/RonaldVilorio/searchMovies",
       },
       {
-        name: "NotFlix",
+        name: "NA",
         imageUrl: `${underConstruction}`,
         alt: "NA image",
+        github: "",
       },
       {
-        name: "NotFlix",
+        name: "NA",
         imageUrl: `${underConstruction}`,
         alt: "NA image",
+        github: "",
       },
       {
-        name: "NotFlix",
+        name: "NA",
         imageUrl: `${underConstruction}`,
         alt: "NA image",
+        github: "",
       },
     ],
   };
@@ -49,7 +56,11 @@ class Projects extends Component {
               this.state.projects.map((proj, id) => {
                 return (
                   <div key={id} className={styles.projectCard}>
-                    <div>{proj.name}</div>
+                    {}
+                    <div>
+                      {proj.name} | <a href={proj.github}>GitHub</a> |{" "}
+                      <a href={proj.website}>Website</a>
+                    </div>
                     <img src={proj.imageUrl} alt={proj.alt} />
                   </div>
                 );
