@@ -3,7 +3,7 @@ import styles from "./Projects.module.css";
 import calculator from "../../assets/calculator.jpg";
 import mario from "../../assets/mario.jpg";
 import notFlix from "../../assets/notFlix.jpg";
-
+import underConstruction from "../../assets/under_construction.jpg";
 class Projects extends Component {
   state = {
     projects: [
@@ -21,6 +21,21 @@ class Projects extends Component {
         name: "NotFlix",
         imageUrl: `${notFlix}`,
         alt: "notFlix image",
+      },
+      {
+        name: "NotFlix",
+        imageUrl: `${underConstruction}`,
+        alt: "NA image",
+      },
+      {
+        name: "NotFlix",
+        imageUrl: `${underConstruction}`,
+        alt: "NA image",
+      },
+      {
+        name: "NotFlix",
+        imageUrl: `${underConstruction}`,
+        alt: "NA image",
       },
     ],
   };

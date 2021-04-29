@@ -8,20 +8,27 @@
   border: aquamarine 5px solid;
 }
 .projectCardsContainer {
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  height: 80%;
-  width: 35%;
+  height: 100%;
+  width: 100%;
+  border: 5px solid orange;
 }
 .projectCard {
   background-color: white;
   display: flex;
   color: green;
-  min-width: 200px;
+  min-width: 100px;
+  height: 20em;
   flex-direction: column;
   justify-content: center;
-  margin: 5px;
-  padding: 5px;
-  border: 2px solid black;
+  margin: 3px;
+  border: 5px solid green;
+}
+.projectCard img {
+  width: 20em;
+  height: 20em;
 }
