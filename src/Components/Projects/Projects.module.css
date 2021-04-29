@@ -17,7 +17,7 @@
 .projectCard {
   background-color: white;
   display: flex;
-  color: #ffa500;
+  color: green;
   min-width: 200px;
   flex-direction: column;
   justify-content: center;
